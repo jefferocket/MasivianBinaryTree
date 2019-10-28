@@ -3,6 +3,8 @@ package com.masivian.binaryTree.model;
 import java.util.Objects;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+
 import io.swagger.annotations.ApiModelProperty;
 
 /**
@@ -11,10 +13,17 @@ import io.swagger.annotations.ApiModelProperty;
  * @author <a href="jefferocket@gmail.com">Jeferson Rincon</a>
  *
  */
+@JsonPropertyOrder({
+"value",
+"left",
+"right"
+})
 public class Node   {
 	@JsonProperty("value")
 	private int value;
+	@JsonProperty("left")
 	private Node leftNode;
+	@JsonProperty("right")
 	private Node rightNode;
 
 	/**
