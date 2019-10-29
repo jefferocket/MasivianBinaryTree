@@ -22,13 +22,25 @@ import com.masivian.binaryTree.service.exceptions.NodeNotFoundException;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiParam;
 
+/**
+ * 
+ * @author <a href="jefferocket@gmail.com">Jeferson Rincon</a>
+ *
+ */
 @RestController
 @RequestMapping(path = "/binaryTree")
 public class BinaryTreeController {
 
+	/**
+	 * The service.
+	 */
 	@Autowired
 	private IBinaryTreeService treeService;
 	
+	/**
+	 * The LOGGER.
+	 * 
+	 */
     private static final Logger LOG = LoggerFactory.getLogger(BinaryTreeController.class);
 
     @ApiOperation(value = "Add a new tree", nickname = "addTree", notes = "Add a binary tree to the server.", tags={ "tree", })

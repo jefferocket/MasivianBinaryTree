@@ -85,6 +85,9 @@ public class Node   {
 		this.rightNode = rightNode;
 	}
 
+	/**
+	 * The way to compare two nodes.
+	 */
 	@Override
 	public boolean equals(java.lang.Object o) {
 		if (this == o) {
@@ -97,6 +100,9 @@ public class Node   {
 		return Objects.equals(this.value, node.value);
 	}
 
+	/**
+	 * To String.
+	 */
 	@Override
 	public String toString(){
 		StringBuilder sb = new StringBuilder();

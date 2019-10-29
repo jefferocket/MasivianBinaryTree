@@ -5,7 +5,12 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
 import io.swagger.annotations.ApiModelProperty;
-
+/**
+ * The binary tree class.
+ * 
+ * @author <a href="jefferocket@gmail.com">Jeferson Rincon</a>
+ *
+ */
 @JsonPropertyOrder({
 "root"
 })
@@ -26,12 +31,15 @@ public class Tree   {
    * @return id
   **/
   @ApiModelProperty(example = "1", value = "")
-
-
   public int getId() {
     return id;
   }
 
+  /**
+   * Set the id.
+   * 
+   * @param id
+   */
   public void setId(int id) {
     this.id = id;
   }
@@ -46,6 +54,11 @@ public class Tree   {
     return root;
   }
 
+  /**
+   * Set the root.
+   * 
+   * @param root
+   */
   public void setRoot(Node root) {
     this.root = root;
   }

@@ -9,6 +9,13 @@ import com.masivian.binaryTree.model.Tree;
 import com.masivian.binaryTree.service.api.IBinaryTreeService;
 import com.masivian.binaryTree.service.exceptions.NodeNotFoundException;
 
+/**
+ * The service implementation.
+ * 
+ * 
+ * @author <a href="jefferocket@gmail.com">Jeferson Rincon</a>
+ *
+ */
 @Service
 public class BinaryTreeService implements IBinaryTreeService {
 

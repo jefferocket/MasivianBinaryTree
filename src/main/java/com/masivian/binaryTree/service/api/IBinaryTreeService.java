@@ -1,7 +1,11 @@
 package com.masivian.binaryTree.service.api;
 
 import com.masivian.binaryTree.model.Tree;
-
+/**
+ * 
+ * @author <a href="jefferocket@gmail.com">Jeferson Rincon</a>
+ *
+ */
 public interface IBinaryTreeService {
 	
 	/**
